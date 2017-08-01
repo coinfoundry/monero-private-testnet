@@ -8,9 +8,7 @@ ADD https://downloads.getmonero.org/linux64 /tmp/
 
 RUN ls -al /
 
-RUN apt-get update && apt-get install -y --no-install-recommends bzip2 && \
-    cd /tmp && cp -R monero*/* /usr/bin && \
-    apt-get remove -y bzip2 && rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* /var/cache/man/* /tmp/* /var/lib/apt/lists/*
+RUN cd /tmp && cp -R monero*/* /usr/bin && rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* /var/cache/man/* /tmp/* /var/lib/apt/lists/*
 
 EXPOSE 28080 38080 28081 38081 28082 38082
 
