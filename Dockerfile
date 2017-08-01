@@ -8,7 +8,7 @@ ADD https://downloads.getmonero.org/linux64 /tmp/
 
 RUN ls -al /
 
-RUN cd /tmp && cp -r monero*/* /usr/bin && rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* /var/cache/man/* /tmp/* /var/lib/apt/lists/*
+RUN cd /tmp && ls -al && cp -r monero*/* /usr/bin && rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* /var/cache/man/* /tmp/* /var/lib/apt/lists/*
 
 EXPOSE 28080 38080 28081 38081 28082 38082
 
