@@ -1,7 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER sh@analogic.cz
-
-# inspired by https://github.com/moneroexamples/private-testnet
+MAINTAINER oliver@weichhold.com
 
 RUN ls -al /
 
