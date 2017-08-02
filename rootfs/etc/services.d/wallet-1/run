@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "* Starting wallet RPC 1..."
-/usr/bin/monero-wallet-rpc --rpc-bind-port 28082 --testnet --wallet-file /data/wallet-1/wallet.bin --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-login user:pass
+/usr/bin/monero-wallet-rpc --rpc-bind-port 28082 --testnet --wallet-file /data/wallet-1/wallet.bin --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-login monerorpc:rpcpassword
