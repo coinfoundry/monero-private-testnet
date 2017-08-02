@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "* Starting node 2..."
-/usr/bin/monerod --detach --testnet --testnet-p2p-bind-port 38080 --testnet-rpc-bind-port 38081 --no-igd --hide-my-port --testnet-data-dir /data/node-2 --p2p-bind-ip 127.0.0.1 --log-level 0 --add-exclusive-node 127.0.0.1:28080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-login monerorpc:rpcpassword
+/usr/bin/monerod --detach --testnet --testnet-p2p-bind-port 38080 --testnet-rpc-bind-port 38081 --no-igd --hide-my-port --testnet-data-dir /data/node-2 --p2p-bind-ip 127.0.0.1 --log-level 0 --add-exclusive-node 127.0.0.1:28080
 
 s6-svc -d /var/run/s6/services/node-2
