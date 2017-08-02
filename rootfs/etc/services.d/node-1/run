@@ -4,6 +4,8 @@
 # TODO rewrite to proper foreground mode after it get solved
 
 echo "* Starting node 1..."
-/usr/bin/monerod --detach --testnet --testnet-p2p-bind-port 28080 --testnet-rpc-bind-port 28081 --no-igd --hide-my-port --testnet-data-dir /data/node-1 --p2p-bind-ip 127.0.0.1 --log-level 0 --add-exclusive-node 127.0.0.1:38080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-login monerorpc:rpcpassword --start-mining 9wviCeWe2D8XS82k2ovp5EUYLzBt9pYNW2LXUFsZiv8S3Mt21FZ5qQaAroko1enzw3eGr9qC7X1D7Geoo2RrAotYPwq9Gm8 --mining-threads 1
+/usr/bin/monerod --detach --testnet --testnet-p2p-bind-port 28080 --testnet-rpc-bind-port 28081 --no-igd --hide-my-port --testnet-data-dir /data/node-1 --p2p-bind-ip 127.0.0.1 --log-level 0 --add-exclusive-node 127.0.0.1:38080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --rpc-login monerorpc:rpcpassword
+
+# --start-mining 9wviCeWe2D8XS82k2ovp5EUYLzBt9pYNW2LXUFsZiv8S3Mt21FZ5qQaAroko1enzw3eGr9qC7X1D7Geoo2RrAotYPwq9Gm8 --mining-threads 1
 
 s6-svc -d /var/run/s6/services/node-1
