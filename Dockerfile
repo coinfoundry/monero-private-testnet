@@ -9,7 +9,7 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v1.17.2.0/s6
 
 RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C / && \
     apt-get update && apt-get install -y --no-install-recommends bzip2 && \
-    cd /tmp && tar xvf monero-linux*.tar.bz2 && cp -R monero*/* /usr/bin && \
+    cd /tmp && tar xfj monero-linux*.tar.bz2 && cp -R monero*/* /usr/bin && \
     apt-get remove -y bzip2 && \
     rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* /var/cache/man/* /tmp/* /var/lib/apt/lists/*
 
