@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# :( https://github.com/monero-project/monero/issues/1763
+# :( https://github.com/aeon-project/aeon/issues/1763
 # TODO rewrite to proper foreground mode after it get solved
 
 echo "* Starting node 1..."
-/usr/bin/monerod --detach --testnet --p2p-bind-port 28080 --rpc-bind-port 28081 --no-igd --hide-my-port --data-dir /data/node-1 --p2p-bind-ip 127.0.0.1 --log-level 1 --add-exclusive-node 127.0.0.1:38080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --zmq-rpc-bind-port 28083
+/usr/bin/aeond --detach --testnet --p2p-bind-port 28080 --rpc-bind-port 28081 --no-igd --hide-my-port --data-dir /data/node-1 --p2p-bind-ip 127.0.0.1 --log-level 1 --add-exclusive-node 127.0.0.1:38080 --rpc-bind-ip 0.0.0.0 --confirm-external-bind --zmq-rpc-bind-port 28083
 
 s6-svc -d /var/run/s6/services/node-1

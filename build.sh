@@ -1,4 +1,4 @@
-docker build -t coinfoundry/monero-private-testnet .
+docker build -t coinfoundry/aeon-private-testnet .
 
 # publish
-docker push coinfoundry/monero-private-testnet
+docker push coinfoundry/aeon-private-testnet

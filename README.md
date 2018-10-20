@@ -1,12 +1,12 @@
-## Monero two nodes testnet
+## AEON two nodes testnet
 
 - Wallet RPC 1 at port 28082, executed with --rpc-login monerorpc:rpcpassword
 - Wallet RPC 2 at port 38082, executed with --rpc-login monerorpc:rpcpassword
 
 ### Addresses
 
-- Node 1: 9wviCeWe2D8XS82k2ovp5EUYLzBt9pYNW2LXUFsZiv8S3Mt21FZ5qQaAroko1enzw3eGr9qC7X1D7Geoo2RrAotYPwq9Gm8
-- Node 2: 9wq792k9sxVZiLn66S3Qzv8QfmtcwkdXgM5cWGsXAPxoQeMQ79md51PLPCijvzk1iHbuHi91pws5B7iajTX9KTtJ4bh2tCh
+- Node 1: UmjKhZQDXKTdkUDqwdCLyGShXpEfYgTJHhei27aeW5a7axtZWWtmcU9iMShKzbv8TVSuSPArsAYK3WAZia59XrEA2uSyu3ndb
+- Node 2: UmjJRusujyU89s7qCQVdmY5YcWVLk1TrnYMgeLP21c18PAvVFpXf8B825bjoUNhBeXZax87RSQe4sdVPuP1tmDwk2r8HddyiC
 
 ### Example RPC against Node 1:
 
